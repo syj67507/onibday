@@ -3,8 +3,8 @@ import Countdown, { CountdownRenderProps } from 'react-countdown';
 export function OniCountdown() {
     return (
         <Countdown
-            // date={new Date("02/05/2025")}
-            date={Date.now() + 5000}
+            date={new Date("02/05/2025")}
+            // date={Date.now() + 5000}
             renderer={props => <Timer {...props} />}
         />
         
