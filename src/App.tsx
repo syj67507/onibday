@@ -1,8 +1,3 @@
-// import { useState } from 'react'
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
-// import './App.css'
-
 import { OniCountdown } from "./components/OniCountdown";
 import oniGif from "./assets/oni.gif";
 
@@ -29,10 +24,11 @@ export default function App() {
           fontFamily: "Courier",
           paddingLeft: "8px",
           paddingRight: "8px",
-          fontSize: "2em"
+          fontSize: "2em",
+          textAlign: "center",
         }}
       >
-      <OniCountdown />
+        <OniCountdown />
       </div>
     </div>
   )

@@ -3,7 +3,8 @@ import Countdown, { CountdownRenderProps } from 'react-countdown';
 export function OniCountdown() {
     return (
         <Countdown
-            date={new Date("02/05/2025")}
+            // date={new Date("02/05/2025")}
+            date={Date.now() + 5000}
             renderer={props => <Timer {...props} />}
         />
         
@@ -18,9 +19,12 @@ function Timer(props: CountdownRenderProps) {
 
     if (!props.completed) {
         return (
-            <h1>{days}:{hours}:{minutes}:{seconds} until Oni's Birthday</h1>
+            <>
+                <p>Oni's Birthday</p>
+                <p>{days}:{hours}:{minutes}:{seconds}</p>
+            </>
         )
     } else {
-        return <h1>HAPPY BIRTHDAY ONI</h1>
+        return <p>HAPPY BIRTHDAY ONI</p>
     }
 }
